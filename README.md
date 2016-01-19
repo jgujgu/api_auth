@@ -128,13 +128,13 @@ single configuration line:
 
 This will automatically sign all outgoing ActiveResource requests from your app.
 
-### Active Rest Client
+### Flexirest
 
-ApiAuth also works with [ActiveRestClient](https://github.com/whichdigital/active-rest-client) in a very similar way.
-Simply add this configuration to your ActiveRestClient initializer in your app and it will automatically sign all outgoing requests.
+ApiAuth also works with [Flexirest](https://github.com/andyjeffries/flexirest) in a very similar way.
+Simply add this configuration to your Flexirest initializer in your app and it will automatically sign all outgoing requests.
 
 ``` ruby
-ActiveRestClient::Base.api_auth_credentials(@access_id, @secret_key)
+Flexirest::Base.api_auth_credentials(@access_id, @secret_key)
 ```
 
 ## Server
